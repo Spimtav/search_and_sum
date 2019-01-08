@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Search and Sum",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.3.1.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon_lobster.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
